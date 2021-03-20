@@ -1,12 +1,12 @@
 .header-primary-nav {
-  height: 60px;
-  display: flex;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-color: rgb(245, 245, 245);
-  box-shadow: 0 1px 5px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 249, 251);
+    box-shadow: 0 1px 5px;
 }
 
 .header-primary-nav-left {
@@ -35,17 +35,17 @@
 }
 
 .header-primary-nav-center input {
-  flex-grow: 1;
-  height: 36px;
-  margin-bottom: 0px;
-  font-size: 16px;
-  max-width: none;
-  background-color: rgb(247, 247, 247);
-  border: 1px solid transparent;
-  padding: 12px;
-  border-radius: 5px 0px 0px 5px;
-  line-height: normal;
-  box-shadow: rgb(0, 0, 0) 0px 0px 0px 1px;
+    flex-grow: 1;
+    height: 36px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    max-width: none;
+    background-color: rgb(236, 229, 240);
+    border: 1px solid transparent;
+    padding: 12px;
+    border-radius: 5px 0px 0px 5px;
+    line-height: normal;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 1px;
 }
 
 .header-primary-nav-center button {
@@ -69,7 +69,17 @@
   color: rgb(45, 207, 172);
 }
 
+#cards {
+    padding-top: 32px;
+    min-height: 100%;
+}
+
 .col-lg-4 {
   border: 3px solid black;
   border-radius: 4px;
+}
+
+#footer {
+    color: green;
+    background-color: peachpuff;
 }
