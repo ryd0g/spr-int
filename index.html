@@ -36,14 +36,12 @@
       </div>
       <div class="header-primary-nav-center">
         <div class="container">
-          <form id="form">
-            <input
-              type="search"
-              id="search"
-              placeholder="Enter product name..."
-            />
-            <button type="submit"></button>
-          </form>
+          <input
+            type="search"
+            id="search"
+            placeholder="Enter product name..."
+          />
+          <button onclick="searchLink()"></button>
         </div>
       </div>
     </div>
@@ -53,39 +51,15 @@
         <div class="row m-5">
           <div class="col-lg-4">
             <h3>Amazon</h3>
-            <p class="lead">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+            <a id="amazon"></a>
           </div>
           <div class="col-lg-4">
             <h3>Target</h3>
-            <p class="lead">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+            <a id="target"></a>
           </div>
           <div class="col-lg-4">
             <h3>Walmart</h3>
-            <p class="lead">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+            <a id="walmart"></a>
           </div>
         </div>
       </div>
@@ -112,6 +86,18 @@
         </a>
       </div>
     </section>
+    <script>
+      const input = document.getElementById('search');
+
+      function searchLink() {
+        const amazonsearch = input.value;
+        document.getElementById('amazon').innerHTML =
+          'Here is a link to your search results';
+        document.getElementById(
+          'amazon'
+        ).href = `https://www.amazon.com/s?k=${amazonsearch}&ref=nb_sb_noss_1`;
+        document.getElementById('amazon').target = '_blank';
+      }
+    </script>
   </body>
-  <script src="script.js"></script>
 </html>
