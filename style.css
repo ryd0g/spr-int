@@ -27,7 +27,7 @@
   max-width: 70vw;
 }
 
-.header-primary-nav-center form {
+.header-primary-nav-center .container {
   display: flex;
   margin-left: auto;
   margin-right: auto;
