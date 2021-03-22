@@ -46,7 +46,6 @@
   padding: 12px;
   border-radius: 5px 0px 0px 5px;
   line-height: normal;
-  box-shadow: rgb(0, 0, 0) 0px 0px 0px 1px;
 }
 
 .header-primary-nav-center button {
@@ -76,11 +75,10 @@
   background-color: rgba(237, 237, 237, 0.72);
 }
 
-
 .col-lg-4 {
-    border: 3px solid black;
-    border-radius: 4px;
-    text-align: center;
+  border: 3px solid black;
+  border-radius: 4px;
+  text-align: center;
 }
 
 #footer {
@@ -91,4 +89,10 @@
 img {
   padding: 10px;
   margin-bottom: 10px;
+}
+h3 {
+  padding-top: 10px;
+}
+a {
+  font-size: 20px;
 }
